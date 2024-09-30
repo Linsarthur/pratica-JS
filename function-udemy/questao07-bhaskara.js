@@ -6,15 +6,17 @@ que os resultados sejam iguais. Caso o delta seja negativo, retorne, ao invés d
 “Delta é negativo” */
 
 
-function bhaskara(a, b, c){
+function bhaskara(a, b, c) {
     const delta = (b ** 2) - (4 * a * c)
-    if(delta < 0){
-        console.log('Delta é negativo');
+    if (delta < 0) {
+        return console.log('Delta é negativo');
+    } else {
+        const acharOXisPositivo = (-b + Math.sqrt(delta)) / 2 * a
+        const acharOXisNegativo = (-b - Math.sqrt(delta)) / 2 * a
+        return console.log([acharOXisPositivo, acharOXisNegativo]);
+        
     }
-    const acharOXisPositivo = (-b + Math.sqrt(delta)) / 2 * a
-    const acharOXisNegativo = (-b - Math.sqrt(delta)) / 2 * a
-    return [acharOXisPositivo, acharOXisNegativo]
 }
-console.log(bhaskara(1, 1, -6));
+bhaskara(-1, -1, -6)
 
 
