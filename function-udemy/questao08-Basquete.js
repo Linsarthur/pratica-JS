@@ -5,7 +5,7 @@ pontuação3 etc..”, escreva uma função que ao recebê-la irá comparar os v
 array com o número de vezes que ele bateu seu recorde de maior número de pontos e quando fez seu pior
 jogo. (Número do pior jogo). */
 
-const pontuacoesString = "10 20 20 8 25 3 0 30 1”";
+const pontuacoesString = "10 20 20 8 25 3 0 30 1";
 
 function analisarJogos(pontuacoesString){
     const convertendoParaArray = pontuacoesString.split(" ").map(Number);
