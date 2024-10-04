@@ -15,10 +15,13 @@ function planoDeTrabalho(plano, salario){
             case plano = "C":
                 console.log(`Seu plano de aumento é o ${plano}, seu novo salário será ${aumentoDe20}`);
                 break
+            default:
+                console.log('Plano não encontrado em nossos dados.');
+                
     }
 
 }
 
-planoDeTrabalho("C", 20)
+planoDeTrabalho("c", 20)
 
 
