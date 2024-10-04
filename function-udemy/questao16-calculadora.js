@@ -12,7 +12,11 @@ function calculadora(num1, num2, operador) {
     case (operador = "/"):
       console.log(`${num1}${operador}${num2} = ${num1 / num2} `);
       break;
+    default:
+        console.log('Operador invalido');
+        
+     
   }
 }
 
-calculadora(10, 10, "/");
+calculadora(10, 110, "-");''
