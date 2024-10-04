@@ -13,10 +13,8 @@ function calculadora(num1, num2, operador) {
       console.log(`${num1}${operador}${num2} = ${num1 / num2} `);
       break;
     default:
-        console.log('Operador invalido');
-        
-     
+      console.log("Operador invalido");
   }
 }
 
-calculadora(10, 110, "-");''
+calculadora(10, 110, "-");
