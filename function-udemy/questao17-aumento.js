@@ -1,5 +1,4 @@
-//Aumento de acordo com o plano."'"
-
+//Aumento de acordo com o plano.
 function planoDeTrabalho(plano, salario){
     const aumentoDe10 = salario + (salario * 0.10)
     const aumentoDe15 = salario + (salario * 0.15)
