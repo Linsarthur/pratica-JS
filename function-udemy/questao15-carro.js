@@ -8,31 +8,29 @@ que não prefere este modelo?”. Caso seja especificado um modelo que não est�
  */
 
 function carro(modelo) {
-    switch (modelo) {
-        case "HATCH".toLowerCase():
-            console.log("Compra efetuada com sucesso");
-            break;
+  switch (modelo) {
+    case "HATCH".toLowerCase():
+      console.log("Compra efetuada com sucesso");
+      break;
 
-        case "SEDAN".toLowerCase():
-            console.log('Tem certeza que não prefere esté modelo?');
-            break;
+    case "SEDAN".toLowerCase():
+      console.log("Tem certeza que não prefere esté modelo?");
+      break;
 
-        case "MOTOCICLETA".toLowerCase():
-            console.log('Tem certeza que não prefere esté modelo?');
-            break;
+    case "MOTOCICLETA".toLowerCase():
+      console.log("Tem certeza que não prefere esté modelo?");
+      break;
 
-        case "CAMINHONETE".toLowerCase():
-            console.log('Tem certeza que não prefere esté modelo?');
-            break;
-        default:
-            console.log('Não trabalhamos com esse tipo de automóvel aqui');
-            
-    }
-
+    case "CAMINHONETE".toLowerCase():
+      console.log("Tem certeza que não prefere esté modelo?");
+      break;
+    default:
+      console.log("Não trabalhamos com esse tipo de automóvel aqui");
+  }
 }
 
-carro('hatch')
-carro('sedan')
-carro('motocicleta')
-carro('caminhonete')
-carro('onibus')
+carro("hatch");
+carro("sedan");
+carro("motocicleta");
+carro("caminhonete");
+carro("onibus");

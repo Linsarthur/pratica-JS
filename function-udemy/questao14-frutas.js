@@ -4,26 +4,20 @@ escassez de kiwis”. Caso melancia, retorne: “Aqui está, são 3 reais o quil
 também um default, que retornará uma mensagem de erro no console.
  */
 
-function feira(fruta){
-    switch(fruta){
-        case "Maçã".toLowerCase():
-            
-            console.log('Não vendemos esta fruta aqui');
-            break;
-        case "Kiwi".toLowerCase():
-            
-            console.log('Estamos com escassez de Kiwis');
-            break;
-        case "Melancia".toLowerCase():
-            
-            console.log('Aqui está, são R$3 reais o quilo');
-            break;
-        default:
-            console.log('Não entendi, pode repetir?');
-        
-            
-            
-    }
+function feira(fruta) {
+  switch (fruta) {
+    case "Maçã".toLowerCase():
+      console.log("Não vendemos esta fruta aqui");
+      break;
+    case "Kiwi".toLowerCase():
+      console.log("Estamos com escassez de Kiwis");
+      break;
+    case "Melancia".toLowerCase():
+      console.log("Aqui está, são R$3 reais o quilo");
+      break;
+    default:
+      console.log("Não entendi, pode repetir?");
+  }
 }
 
-feira("Banana")
+feira("Banana");

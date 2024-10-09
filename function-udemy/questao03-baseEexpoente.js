@@ -1,7 +1,5 @@
-function baseEexpoente(base, expoente){
-    return (base ** expoente);
-    
+function baseEexpoente(base, expoente) {
+  return base ** expoente;
 }
 
-
-console.log(baseEexpoente(10,20));
+console.log(baseEexpoente(10, 20));

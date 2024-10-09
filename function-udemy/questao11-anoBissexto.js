@@ -8,17 +8,17 @@ Partindo daí elabore uma função que recebe um ano e calcula se ele é ano bis
 mensagem e retornando true ou false.
 */
 
-function anoBissexto(ano){
-    const bissexto = ano % 4 === 0 && ano % 400 === 0
-    const bissextoTerminadoEmZero = ano % 100 === 0 
-    if(bissexto){
-        console.log(`O ano ${ano} é bissexto`);
-    }else if(bissextoTerminadoEmZero) {
-        console.log(`O ano ${ano} não é bissexto`);   
-    } else{
-        console.log(`O ano ${ano} não é bissexto`);   
-    }
-    return anoBissexto
+function anoBissexto(ano) {
+  const bissexto = ano % 4 === 0 && ano % 400 === 0;
+  const bissextoTerminadoEmZero = ano % 100 === 0;
+  if (bissexto) {
+    console.log(`O ano ${ano} é bissexto`);
+  } else if (bissextoTerminadoEmZero) {
+    console.log(`O ano ${ano} não é bissexto`);
+  } else {
+    console.log(`O ano ${ano} não é bissexto`);
+  }
+  return anoBissexto;
 }
 
-anoBissexto(2023) 
+anoBissexto(2023);

@@ -9,36 +9,28 @@ e o aluno será aprovado.
  */
 
 const students = [
-    {name: 'Arthur',grade: 60},
-    {name: 'Matheus',grade: 38},
-    {name: 'Davi',grade: 27},
-    {name: 'Julia',grade: 37}
-]
-
+  { name: "Arthur", grade: 60 },
+  { name: "Matheus", grade: 38 },
+  { name: "Davi", grade: 27 },
+  { name: "Julia", grade: 37 },
+];
 
 function verifyGrade(notas) {
-
-    if (notas < 38) {
-        return notas
-    }
-    const nextMultiplies = Math.ceil(notas / 5) * 5;
-    if (nextMultiplies - notas < 3) {
-        return nextMultiplies
-    }
-    return notas
-
-
+  if (notas < 38) {
+    return notas;
+  }
+  const nextMultiplies = Math.ceil(notas / 5) * 5;
+  if (nextMultiplies - notas < 3) {
+    return nextMultiplies;
+  }
+  return notas;
 }
 function avaliarAlunos(students) {
-    students.forEach(student => {
-        const notaAjustada = verifyGrade(student.grade)
-        const status = notaAjustada >= 40 ? 'Aprovado' : 'Reprovado';
-        console.log(`${student.name} - nota ${student.grade} - status ${status}`);
-
-    });
+  students.forEach((student) => {
+    const notaAjustada = verifyGrade(student.grade);
+    const status = notaAjustada >= 40 ? "Aprovado" : "Reprovado";
+    console.log(`${student.name} - nota ${student.grade} - status ${status}`);
+  });
 }
 
-
-
-avaliarAlunos(students)
-
+avaliarAlunos(students);
